@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ISSA</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #fff7cc, #ffd6a5);
+      color: #1f2937;
+      text-align: center;
+    }
+    .container { max-width: 1000px; margin: auto; padding: 24px; }
+    header { padding: 60px 0; }
+    .medal { font-size: 80px; }
+    h1 { font-size: 70px; margin: 10px 0; }
+    h2 { font-size: 26px; font-weight: normal; color: #555; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 40px 0;
+    }
+    .card, .box {
+      background: white;
+      border-radius: 25px;
+      padding: 25px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    }
+    .emoji { font-size: 45px; }
+    input, textarea {
+      width: 90%;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 12px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    textarea { height: 120px; }
+    button {
+      padding: 15px 25px;
+      border: none;
+      border-radius: 14px;
+      background: #111;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    button:hover { background: #333; }
+    footer { padding: 40px 0; color: #666; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="medal">🏅</div>
+      <h1>ISSA</h1>
+      <h2>International Student Survival Association</h2>
+      <p>Because international students don’t just graduate... <b>they survive.</b></p>
+      <button>Submit Your Survival Story</button>
+    </header>
+
+    <section class="cards">
+      <div class="card">
+        <div class="emoji">📚</div>
+        <h3>Academic Survivor</h3>
+        <p>Translated lecture slides at 2 AM and still passed the exam.</p>
+      </div>
+
+      <div class="card">
+        <div class="emoji">🍜</div>
+        <h3>Instant Noodle Master</h3>
+        <p>Survived an entire week using only instant noodles and optimism.</p>
+      </div>
+
+      <div class="card">
+        <div class="emoji">💼</div>
+        <h3>Part-Time Warrior</h3>
+        <p>Worked late shifts, attended morning classes, and somehow survived.</p>
+      </div>
+    </section>
+
+    <section class="box">
+      <h2>Hall of Survivors</h2>
+      <p><i>“I pretended to understand my professor for an entire semester.”</i></p>
+      <p><i>“My part-time job knew me better than my classmates.”</i></p>
+      <p><i>“I laughed at jokes I didn’t understand just to fit in.”</i></p>
+    </section>
+
+    <section style="padding: 50px 0;">
+      <h2>Think your survival story is worse?</h2>
+      <p>Submit your story and compete for the ultimate survival award.</p>
+
+      <div class="box">
+        <input type="text" placeholder="Your name" />
+        <textarea placeholder="Tell us your survival story..."></textarea>
+        <br />
+        <button>Submit Story</button>
+      </div>
+    </section>
+
+    <footer>
+      “International students don’t just earn diplomas. They survive the journey.”
+    </footer>
+  </div>
+</body>
+</html>
